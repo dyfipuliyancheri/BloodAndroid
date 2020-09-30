@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRowMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#fff"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:cardCornerRadius="8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_blood"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/type1" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_constraintStart_toEndOf="@+id/img_blood"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Address"
+            app:layout_constraintStart_toEndOf="@+id/img_blood"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="monospace"
+            android:text="7559861279"
+            app:layout_constraintStart_toEndOf="@+id/img_blood"
+            app:layout_constraintTop_toBottomOf="@+id/tv_adress" />
+
+        <ImageButton
+            android:id="@+id/bt_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/ic_dial"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="5-12-2017"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_blood"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>
