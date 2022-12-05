@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         email = findViewById(R.id.et_email);
-        pswd = findViewById(R.id.et_password);
+        password = findViewById(R.id.et_password);
         signin = findViewById(R.id.bt_sign_in);
 
         signin.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
                     progressBar.setVisibility(View.VISIBLE);
                     signin.setEnabled(false);
                     username = email.getText().toString();
-                    passwd = pswd.getText().toString();
+                    passwd = password.getText().toString();
                     mAuth.signInWithEmailAndPassword(username, passwd)
                             .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                                 @Override
